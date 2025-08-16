@@ -4,6 +4,9 @@ import { StatsCard } from "@/components/StatsCard";
 import { PricingCard } from "@/components/PricingCard";
 import { TrendingUp, Target, Award, Star, BarChart3, Users } from "lucide-react";
 import heroImage from "@/assets/hero-betting.jpg";
+import analystImage from "@/assets/analyst-workspace.jpg";
+import profitImage from "@/assets/profit-success.jpg";
+import winnerImage from "@/assets/winner-celebration.jpg";
 
 const Index = () => {
   const handleSubscribe = (plan: string) => {
@@ -132,6 +135,125 @@ const Index = () => {
             {stats.map((stat, index) => (
               <StatsCard key={index} {...stat} />
             ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Analysis Process Section */}
+      <section className="py-16 relative overflow-hidden">
+        <div className="container mx-auto px-4">
+          <div className="grid lg:grid-cols-2 gap-12 items-center">
+            <div>
+              <h2 className="text-4xl font-bold mb-6 text-foreground">
+                Análisis Profesional
+                <span className="text-transparent bg-gradient-hero bg-clip-text"> 24/7</span>
+              </h2>
+              <p className="text-xl text-muted-foreground mb-8">
+                Nuestro equipo de expertos analiza cada partido con datos avanzados, 
+                estadísticas en tiempo real y algoritmos propietarios para ofrecerte 
+                las mejores oportunidades de ganancia.
+              </p>
+              <div className="space-y-4">
+                <div className="flex items-center space-x-3">
+                  <div className="w-3 h-3 bg-primary rounded-full"></div>
+                  <span className="text-foreground">Análisis estadístico avanzado</span>
+                </div>
+                <div className="flex items-center space-x-3">
+                  <div className="w-3 h-3 bg-primary rounded-full"></div>
+                  <span className="text-foreground">Monitoreo de cuotas en tiempo real</span>
+                </div>
+                <div className="flex items-center space-x-3">
+                  <div className="w-3 h-3 bg-primary rounded-full"></div>
+                  <span className="text-foreground">Algoritmos de machine learning</span>
+                </div>
+              </div>
+            </div>
+            <div className="relative">
+              <div className="absolute inset-0 bg-gradient-hero opacity-20 rounded-2xl blur-xl"></div>
+              <img 
+                src={analystImage} 
+                alt="Análisis profesional de apuestas" 
+                className="relative rounded-2xl shadow-card w-full h-auto"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Profit Success Section */}
+      <section className="py-16 bg-secondary/20">
+        <div className="container mx-auto px-4">
+          <div className="grid lg:grid-cols-2 gap-12 items-center">
+            <div className="lg:order-2">
+              <h2 className="text-4xl font-bold mb-6 text-foreground">
+                Ganancias
+                <span className="text-transparent bg-gradient-success bg-clip-text"> Comprobadas</span>
+              </h2>
+              <p className="text-xl text-muted-foreground mb-8">
+                Más de €2.8M en ganancias generadas para nuestros miembros. 
+                Cada pick está respaldado por análisis riguroso y transparencia total 
+                en nuestros resultados.
+              </p>
+              <Card className="p-6 bg-success/10 border-success/20 mb-6">
+                <div className="flex items-center justify-between">
+                  <div>
+                    <p className="text-success font-semibold text-lg">ROI Promedio</p>
+                    <p className="text-3xl font-bold text-success">+127%</p>
+                  </div>
+                  <TrendingUp className="w-12 h-12 text-success" />
+                </div>
+              </Card>
+              <Button variant="success" size="lg" className="w-full lg:w-auto">
+                Ver Historial Completo
+              </Button>
+            </div>
+            <div className="lg:order-1 relative">
+              <div className="absolute inset-0 bg-gradient-success opacity-20 rounded-2xl blur-xl"></div>
+              <img 
+                src={profitImage} 
+                alt="Ganancias y éxito en apuestas" 
+                className="relative rounded-2xl shadow-card w-full h-auto"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Success Stories Section */}
+      <section className="py-16">
+        <div className="container mx-auto px-4">
+          <div className="grid lg:grid-cols-2 gap-12 items-center">
+            <div>
+              <h2 className="text-4xl font-bold mb-6 text-foreground">
+                Historias de
+                <span className="text-transparent bg-gradient-hero bg-clip-text"> Éxito</span>
+              </h2>
+              <p className="text-xl text-muted-foreground mb-8">
+                Miles de apostadores han transformado su forma de apostar y 
+                multiplicado sus ganancias siguiendo nuestras estrategias comprobadas.
+              </p>
+              <div className="grid grid-cols-2 gap-6 mb-8">
+                <Card className="p-4 bg-gradient-card border-accent/20 text-center">
+                  <p className="text-2xl font-bold text-primary">94%</p>
+                  <p className="text-muted-foreground text-sm">Satisfacción</p>
+                </Card>
+                <Card className="p-4 bg-gradient-card border-accent/20 text-center">
+                  <p className="text-2xl font-bold text-primary">3.2x</p>
+                  <p className="text-muted-foreground text-sm">ROI Promedio</p>
+                </Card>
+              </div>
+              <Button variant="hero" size="lg">
+                Únete Ahora
+              </Button>
+            </div>
+            <div className="relative">
+              <div className="absolute inset-0 bg-gradient-hero opacity-20 rounded-2xl blur-xl"></div>
+              <img 
+                src={winnerImage} 
+                alt="Apostador exitoso celebrando ganancias" 
+                className="relative rounded-2xl shadow-card w-full h-auto"
+              />
+            </div>
           </div>
         </div>
       </section>
