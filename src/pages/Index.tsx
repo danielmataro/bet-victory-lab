@@ -71,7 +71,7 @@ const Index = () => {
         <div className="container mx-auto px-4 py-4 flex justify-between items-center">
           <div className="flex items-center space-x-2">
             <BarChart3 className="w-8 h-8 text-primary" />
-            <h1 className="text-2xl font-bold text-foreground">ProTipster</h1>
+            <h1 className="text-2xl font-bold text-foreground">pronosticando</h1>
           </div>
           <div className="flex space-x-4">
             <Button variant="ghost">Estadísticas</Button>
@@ -149,22 +149,22 @@ const Index = () => {
                 <span className="text-transparent bg-gradient-hero bg-clip-text"> 24/7</span>
               </h2>
               <p className="text-xl text-muted-foreground mb-8">
-                Nuestro equipo de expertos analiza cada partido con datos avanzados, 
-                estadísticas en tiempo real y algoritmos propietarios para ofrecerte 
-                las mejores oportunidades de ganancia.
+                Contamos con un sofisticado sistema de AI desarrollado por analistas 
+                profesionales que verifican y mejoran cada uno de los pronósticos 
+                para mantener los mejores ratios de ganancias del mercado.
               </p>
               <div className="space-y-4">
                 <div className="flex items-center space-x-3">
                   <div className="w-3 h-3 bg-primary rounded-full"></div>
-                  <span className="text-foreground">Análisis estadístico avanzado</span>
+                  <span className="text-foreground">Sistema de AI con analistas profesionales</span>
                 </div>
                 <div className="flex items-center space-x-3">
                   <div className="w-3 h-3 bg-primary rounded-full"></div>
-                  <span className="text-foreground">Monitoreo de cuotas en tiempo real</span>
+                  <span className="text-foreground">Verificación y mejora continua de pronósticos</span>
                 </div>
                 <div className="flex items-center space-x-3">
                   <div className="w-3 h-3 bg-primary rounded-full"></div>
-                  <span className="text-foreground">Algoritmos de machine learning</span>
+                  <span className="text-foreground">Algoritmos optimizados para máximas ganancias</span>
                 </div>
               </div>
             </div>
@@ -191,8 +191,8 @@ const Index = () => {
               </h2>
               <p className="text-xl text-muted-foreground mb-8">
                 Más de €2.8M en ganancias generadas para nuestros miembros. 
-                Cada pick está respaldado por análisis riguroso y transparencia total 
-                en nuestros resultados.
+                Nuestro sistema de AI con analistas profesionales garantiza la máxima 
+                precisión y los mejores ratios de ganancia del mercado.
               </p>
               <Card className="p-6 bg-success/10 border-success/20 mb-6">
                 <div className="flex items-center justify-between">
@@ -229,8 +229,9 @@ const Index = () => {
                 <span className="text-transparent bg-gradient-hero bg-clip-text"> Éxito</span>
               </h2>
               <p className="text-xl text-muted-foreground mb-8">
-                Miles de apostadores han transformado su forma de apostar y 
-                multiplicado sus ganancias siguiendo nuestras estrategias comprobadas.
+                Miles de apostadores confían en nuestro sistema de AI y analistas 
+                profesionales. Cada pronóstico es verificado y optimizado para 
+                garantizar los mejores resultados posibles.
               </p>
               <div className="grid grid-cols-2 gap-6 mb-8">
                 <Card className="p-4 bg-gradient-card border-accent/20 text-center">
@@ -303,7 +304,7 @@ const Index = () => {
         <div className="container mx-auto px-4 text-center">
           <div className="flex items-center justify-center space-x-2 mb-4">
             <BarChart3 className="w-6 h-6 text-primary" />
-            <span className="text-xl font-bold text-foreground">ProTipster</span>
+            <span className="text-xl font-bold text-foreground">pronosticando</span>
           </div>
           <p className="text-muted-foreground mb-4">
             Predicciones profesionales de apuestas deportivas
@@ -314,7 +315,7 @@ const Index = () => {
             <a href="#" className="hover:text-primary transition-colors">Contacto</a>
           </div>
           <p className="text-muted-foreground mt-6 text-sm">
-            © 2024 ProTipster. Juega con responsabilidad. +18
+            © 2024 pronosticando. Juega con responsabilidad. +18
           </p>
         </div>
       </footer>
