@@ -6,7 +6,7 @@ import { TrendingUp, Target, Award, Star, BarChart3, Users } from "lucide-react"
 import heroImage from "@/assets/hero-betting.jpg";
 import analystImage from "@/assets/analyst-workspace.jpg";
 import profitImage from "@/assets/profit-success.jpg";
-import winnerImage from "@/assets/winner-celebration.jpg";
+// import winnerImage from "@/assets/winner-celebration.jpg";
 
 const Index = () => {
   const handleSubscribe = (plan: string) => {
@@ -250,7 +250,7 @@ const Index = () => {
             <div className="relative">
               <div className="absolute inset-0 bg-gradient-hero opacity-20 rounded-2xl blur-xl"></div>
               <img 
-                src={winnerImage} 
+                src="/lovable-uploads/1e8886c8-7460-4413-a635-f23de612bf8a.png" 
                 alt="Liga Española de Fútbol - Especialización en pronósticos 1x2" 
                 className="relative rounded-2xl shadow-card w-full h-auto"
               />
