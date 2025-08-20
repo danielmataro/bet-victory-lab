@@ -47,21 +47,21 @@ const Index = () => {
   ];
 
   const basicFeatures = [
-    "2-3 picks diarios",
-    "Análisis básico de partidos",
+    "2-3 pronósticos 1x2 por jornada",
+    "Análisis básico Liga Española",
     "Acceso a estadísticas históricas",
     "Soporte por email",
     "Comunidad de Telegram"
   ];
 
   const premiumFeatures = [
-    "5-7 picks diarios",
-    "Análisis profundo y detallado",
-    "Picks VIP de alta confianza",
-    "Alertas en tiempo real",
+    "Todos los pronósticos 1x2 de la jornada",
+    "Análisis profundo de cada partido",
+    "Pronósticos VIP de máxima confianza",
+    "Alertas antes de cada jornada",
     "Soporte prioritario 24/7",
-    "Acceso a estrategias avanzadas",
-    "Sesiones de coaching grupales"
+    "Estadísticas avanzadas Liga Española",
+    "Sesiones de análisis grupales"
   ];
 
   return (
@@ -97,8 +97,8 @@ const Index = () => {
             <span className="text-transparent bg-gradient-hero bg-clip-text"> Ganadoras</span>
           </h1>
           <p className="text-xl text-muted-foreground mb-8 max-w-2xl mx-auto">
-            Únete a miles de apostadores que confían en nuestras predicciones profesionales 
-            y multiplica tus ganancias con estrategias probadas.
+            Especialistas en pronósticos 1x2 de la Liga Española. Únete a miles de 
+            apostadores que confían en nuestras predicciones y multiplica tus ganancias.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
             <Button variant="hero" size="lg" className="text-lg px-8">
@@ -145,26 +145,26 @@ const Index = () => {
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
               <h2 className="text-4xl font-bold mb-6 text-foreground">
-                Análisis Profesional
-                <span className="text-transparent bg-gradient-hero bg-clip-text"> 24/7</span>
+                Especialistas en
+                <span className="text-transparent bg-gradient-hero bg-clip-text"> Liga Española</span>
               </h2>
               <p className="text-xl text-muted-foreground mb-8">
-                Contamos con un sofisticado sistema de AI desarrollado por analistas 
-                profesionales que verifican y mejoran cada uno de los pronósticos 
-                para mantener los mejores ratios de ganancias del mercado.
+                Hemos especializado nuestros pronósticos en el 1x2 de las jornadas de 
+                la Liga Española. Nuestro sistema de AI y analistas profesionales 
+                analizan cada partido para ofrecerte los mejores pronósticos.
               </p>
               <div className="space-y-4">
                 <div className="flex items-center space-x-3">
                   <div className="w-3 h-3 bg-primary rounded-full"></div>
-                  <span className="text-foreground">Sistema de AI con analistas profesionales</span>
+                  <span className="text-foreground">Especialización exclusiva en Liga Española</span>
                 </div>
                 <div className="flex items-center space-x-3">
                   <div className="w-3 h-3 bg-primary rounded-full"></div>
-                  <span className="text-foreground">Verificación y mejora continua de pronósticos</span>
+                  <span className="text-foreground">Pronósticos 1x2 con máxima precisión</span>
                 </div>
                 <div className="flex items-center space-x-3">
                   <div className="w-3 h-3 bg-primary rounded-full"></div>
-                  <span className="text-foreground">Algoritmos optimizados para máximas ganancias</span>
+                  <span className="text-foreground">Análisis profundo de cada jornada</span>
                 </div>
               </div>
             </div>
