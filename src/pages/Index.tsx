@@ -251,7 +251,7 @@ const Index = () => {
               <div className="absolute inset-0 bg-gradient-hero opacity-20 rounded-2xl blur-xl"></div>
               <img 
                 src={winnerImage} 
-                alt="Apostador exitoso celebrando ganancias" 
+                alt="Liga Española de Fútbol - Especialización en pronósticos 1x2" 
                 className="relative rounded-2xl shadow-card w-full h-auto"
               />
             </div>
