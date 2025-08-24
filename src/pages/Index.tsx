@@ -47,7 +47,7 @@ const Index = () => {
 
   const basicFeatures = [
     "2-3 pronósticos por jornada",
-    "Análisis básico ligas nacionales",
+    "Análisis básico de las principales ligas",
     "Acceso a estadísticas históricas",
     "Soporte por email",
     "Comunidad en redes sociales"
@@ -59,7 +59,7 @@ const Index = () => {
     "Pronósticos VIP de máxima confianza",
     "Alertas antes de cada jornada",
     "Soporte prioritario 24/7",
-    "Estadísticas avanzadas ligas nacionales e internacionales",
+    "Estadísticas avanzadas de todas las ligas",
     "Sesiones de análisis grupales"
   ];
 
@@ -91,7 +91,7 @@ const Index = () => {
             <span className="text-transparent bg-gradient-hero bg-clip-text"> Ganadoras</span>
           </h1>
           <p className="text-xl text-muted-foreground mb-8 max-w-2xl mx-auto">
-            Equipo de especialistas en pronósticos de fútbol de ligas nacionales e internacionales. 
+            Equipo de especialistas en pronósticos de fútbol de todas las ligas. 
             Únete a miles de apostadores que confían en nuestras predicciones y multiplica tus ganancias.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
@@ -158,17 +158,17 @@ const Index = () => {
             <div>
               <h2 className="text-4xl font-bold mb-6 text-foreground">
                 Especialistas en
-                <span className="text-transparent bg-gradient-hero bg-clip-text"> Ligas Nacionales e Internacionales</span>
+                <span className="text-transparent bg-gradient-hero bg-clip-text"> Todas las Ligas</span>
               </h2>
               <p className="text-xl text-muted-foreground mb-8">
                 Nuestro equipo de analistas profesionales especializado en pronósticos de fútbol 
-                de ligas nacionales e internacionales. Utilizamos tecnología avanzada y análisis 
+                de las principales competiciones mundiales. Utilizamos tecnología avanzada y análisis 
                 profundo para ofrecerte pronósticos con máxima precisión.
               </p>
               <div className="space-y-4">
                 <div className="flex items-center space-x-3">
                   <div className="w-3 h-3 bg-primary rounded-full"></div>
-                  <span className="text-foreground">Especialización en ligas nacionales e internacionales</span>
+                  <span className="text-foreground">Cobertura completa de las mejores competiciones</span>
                 </div>
                 <div className="flex items-center space-x-3">
                   <div className="w-3 h-3 bg-primary rounded-full"></div>
