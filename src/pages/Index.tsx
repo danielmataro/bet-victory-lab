@@ -4,9 +4,8 @@ import { StatsCard } from "@/components/StatsCard";
 import { PricingCard } from "@/components/PricingCard";
 import { TrendingUp, Target, Award, Star, BarChart3, Users } from "lucide-react";
 import heroImage from "@/assets/hero-betting.jpg";
-import analystImage from "@/assets/analyst-workspace.jpg";
+import sportsAnalystsImage from "@/assets/sports-analysts-team.jpg";
 import profitImage from "@/assets/profit-success.jpg";
-// import winnerImage from "@/assets/winner-celebration.jpg";
 
 const Index = () => {
   const handleSubscribe = (plan: string) => {
@@ -25,9 +24,9 @@ const Index = () => {
     },
     {
       title: "Profit Total",
-      value: 2847,
+      value: "2,8M",
       suffix: "€",
-      description: "Beneficios generados para nuestros miembros",
+      description: "Millones de euros generados para nuestros miembros",
       icon: <TrendingUp className="w-6 h-6" />
     },
     {
@@ -47,20 +46,20 @@ const Index = () => {
   ];
 
   const basicFeatures = [
-    "2-3 pronósticos 1x2 por jornada",
-    "Análisis básico Liga Española",
+    "2-3 pronósticos por jornada",
+    "Análisis básico ligas nacionales",
     "Acceso a estadísticas históricas",
     "Soporte por email",
-    "Comunidad de Telegram"
+    "Comunidad en redes sociales"
   ];
 
   const premiumFeatures = [
-    "Todos los pronósticos 1x2 de la jornada",
+    "Todos los pronósticos de la jornada",
     "Análisis profundo de cada partido",
     "Pronósticos VIP de máxima confianza",
     "Alertas antes de cada jornada",
     "Soporte prioritario 24/7",
-    "Estadísticas avanzadas Liga Española",
+    "Estadísticas avanzadas ligas nacionales e internacionales",
     "Sesiones de análisis grupales"
   ];
 
@@ -71,12 +70,7 @@ const Index = () => {
         <div className="container mx-auto px-4 py-4 flex justify-between items-center">
           <div className="flex items-center space-x-2">
             <BarChart3 className="w-8 h-8 text-primary" />
-            <h1 className="text-2xl font-bold text-foreground">pronosticando</h1>
-          </div>
-          <div className="flex space-x-4">
-            <Button variant="ghost">Estadísticas</Button>
-            <Button variant="ghost">Planes</Button>
-            <Button variant="outline">Iniciar Sesión</Button>
+            <h1 className="text-2xl font-bold text-foreground">Pronosticando</h1>
           </div>
         </div>
       </header>
@@ -97,8 +91,8 @@ const Index = () => {
             <span className="text-transparent bg-gradient-hero bg-clip-text"> Ganadoras</span>
           </h1>
           <p className="text-xl text-muted-foreground mb-8 max-w-2xl mx-auto">
-            Especialistas en pronósticos 1x2 de la Liga Española. Únete a miles de 
-            apostadores que confían en nuestras predicciones y multiplica tus ganancias.
+            Equipo de especialistas en pronósticos de fútbol de ligas nacionales e internacionales. 
+            Únete a miles de apostadores que confían en nuestras predicciones y multiplica tus ganancias.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
             <Button variant="hero" size="lg" className="text-lg px-8">
@@ -116,11 +110,29 @@ const Index = () => {
                 <Star key={i} className="w-5 h-5 text-warning fill-current" />
               ))}
             </div>
-            <p className="text-card-foreground italic">
-              "En 6 meses he recuperado mi inversión y generado un profit del 340%. 
-              Las predicciones son increíblemente precisas."
-            </p>
-            <p className="text-muted-foreground mt-2">- Carlos M., miembro Premium</p>
+            <div className="space-y-4">
+              <div>
+                <p className="text-card-foreground italic">
+                  "En 6 meses he recuperado mi inversión y generado un profit del 340%. 
+                  Las predicciones son increíblemente precisas."
+                </p>
+                <p className="text-muted-foreground mt-2">- Carlos M., miembro Premium</p>
+              </div>
+              <div>
+                <p className="text-card-foreground italic">
+                  "Después de 3 años siguiendo sus pronósticos, puedo decir que son los mejores del mercado. 
+                  Consistencia y profesionalismo garantizados."
+                </p>
+                <p className="text-muted-foreground mt-2">- Ana R., miembro desde 2022</p>
+              </div>
+              <div>
+                <p className="text-card-foreground italic">
+                  "Gracias a su equipo de analistas he logrado convertir las apuestas en una fuente de ingresos 
+                  estable. Recomendado al 100%."
+                </p>
+                <p className="text-muted-foreground mt-2">- Miguel L., trader deportivo</p>
+              </div>
+            </div>
           </Card>
         </div>
       </section>
@@ -146,21 +158,21 @@ const Index = () => {
             <div>
               <h2 className="text-4xl font-bold mb-6 text-foreground">
                 Especialistas en
-                <span className="text-transparent bg-gradient-hero bg-clip-text"> Liga Española</span>
+                <span className="text-transparent bg-gradient-hero bg-clip-text"> Ligas Nacionales e Internacionales</span>
               </h2>
               <p className="text-xl text-muted-foreground mb-8">
-                Hemos especializado nuestros pronósticos en el 1x2 de las jornadas de 
-                la Liga Española. Nuestro sistema de AI y analistas profesionales 
-                analizan cada partido para ofrecerte los mejores pronósticos.
+                Nuestro equipo de analistas profesionales especializado en pronósticos de fútbol 
+                de ligas nacionales e internacionales. Utilizamos tecnología avanzada y análisis 
+                profundo para ofrecerte pronósticos con máxima precisión.
               </p>
               <div className="space-y-4">
                 <div className="flex items-center space-x-3">
                   <div className="w-3 h-3 bg-primary rounded-full"></div>
-                  <span className="text-foreground">Especialización exclusiva en Liga Española</span>
+                  <span className="text-foreground">Especialización en ligas nacionales e internacionales</span>
                 </div>
                 <div className="flex items-center space-x-3">
                   <div className="w-3 h-3 bg-primary rounded-full"></div>
-                  <span className="text-foreground">Pronósticos 1x2 con máxima precisión</span>
+                  <span className="text-foreground">Pronósticos con máxima precisión</span>
                 </div>
                 <div className="flex items-center space-x-3">
                   <div className="w-3 h-3 bg-primary rounded-full"></div>
@@ -171,8 +183,8 @@ const Index = () => {
             <div className="relative">
               <div className="absolute inset-0 bg-gradient-hero opacity-20 rounded-2xl blur-xl"></div>
               <img 
-                src={analystImage} 
-                alt="Análisis profesional de apuestas" 
+                src={sportsAnalystsImage} 
+                alt="Equipo de analistas deportivos profesionales" 
                 className="relative rounded-2xl shadow-card w-full h-auto"
               />
             </div>
@@ -190,8 +202,8 @@ const Index = () => {
                 <span className="text-transparent bg-gradient-success bg-clip-text"> Comprobadas</span>
               </h2>
               <p className="text-xl text-muted-foreground mb-8">
-                Más de €2.8M en ganancias generadas para nuestros miembros. 
-                Nuestro sistema de AI con analistas profesionales garantiza la máxima 
+                Más de 2,8 millones de euros en ganancias generadas para nuestros miembros. 
+                Nuestro equipo de analistas profesionales garantiza la máxima 
                 precisión y los mejores ratios de ganancia del mercado.
               </p>
               <Card className="p-6 bg-success/10 border-success/20 mb-6">
@@ -229,7 +241,7 @@ const Index = () => {
                 <span className="text-transparent bg-gradient-hero bg-clip-text"> Éxito</span>
               </h2>
               <p className="text-xl text-muted-foreground mb-8">
-                Miles de apostadores confían en nuestro sistema de AI y analistas 
+                Miles de apostadores confían en nuestro equipo de analistas 
                 profesionales. Cada pronóstico es verificado y optimizado para 
                 garantizar los mejores resultados posibles.
               </p>
@@ -251,7 +263,7 @@ const Index = () => {
               <div className="absolute inset-0 bg-gradient-hero opacity-20 rounded-2xl blur-xl"></div>
               <img 
                 src="/lovable-uploads/1e8886c8-7460-4413-a635-f23de612bf8a.png" 
-                alt="Liga Española de Fútbol - Especialización en pronósticos 1x2" 
+                alt="Liga Española de Fútbol - Especialización en pronósticos deportivos"
                 className="relative rounded-2xl shadow-card w-full h-auto"
               />
             </div>
@@ -304,7 +316,7 @@ const Index = () => {
         <div className="container mx-auto px-4 text-center">
           <div className="flex items-center justify-center space-x-2 mb-4">
             <BarChart3 className="w-6 h-6 text-primary" />
-            <span className="text-xl font-bold text-foreground">pronosticando</span>
+            <span className="text-xl font-bold text-foreground">Pronosticando</span>
           </div>
           <p className="text-muted-foreground mb-4">
             Predicciones profesionales de apuestas deportivas

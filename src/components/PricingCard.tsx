@@ -52,7 +52,7 @@ export const PricingCard = ({
         size="lg"
         className="w-full"
       >
-        Suscribirse Ahora
+        Obtener Ahora
       </Button>
     </Card>
   );

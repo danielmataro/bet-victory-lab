@@ -3,7 +3,7 @@ import { StatsCounter } from "./StatsCounter";
 
 interface StatsCardProps {
   title: string;
-  value: number;
+  value: number | string;
   suffix?: string;
   description: string;
   icon?: React.ReactNode;
@@ -24,11 +24,17 @@ export const StatsCard = ({
       </div>
       
       <div className="mb-2">
-        <StatsCounter 
-          value={value} 
-          suffix={suffix}
-          className="text-3xl font-bold text-primary"
-        />
+        {typeof value === 'number' ? (
+          <StatsCounter 
+            value={value} 
+            suffix={suffix}
+            className="text-3xl font-bold text-primary"
+          />
+        ) : (
+          <span className="text-3xl font-bold text-primary">
+            {value}{suffix}
+          </span>
+        )}
       </div>
       
       <p className="text-muted-foreground text-sm">{description}</p>
