@@ -9,9 +9,11 @@ import profitImage from "@/assets/profit-success.jpg";
 
 const Index = () => {
   const handleSubscribe = (plan: string) => {
-    // Aquí se conectaría con Stripe después de configurar Supabase
-    console.log(`Suscripción a plan: ${plan}`);
-    alert("Para activar las suscripciones, primero conecta Supabase usando el botón verde en la parte superior derecha.");
+    if (plan === "basic") {
+      window.open('https://buy.stripe.com/fZu6oJdxm8WF2xW4ScafS00', '_blank');
+    } else {
+      window.open('https://buy.stripe.com/bJe28t1OEb4NegE70kafS01', '_blank');
+    }
   };
 
   const stats = [
@@ -95,10 +97,20 @@ const Index = () => {
             Únete a miles de apostadores que confían en nuestras predicciones y multiplica tus ganancias.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
-            <Button variant="hero" size="lg" className="text-lg px-8">
-              Ver Picks Gratuitos
+            <Button 
+              variant="hero" 
+              size="lg" 
+              className="text-lg px-8"
+              onClick={() => window.open('https://buy.stripe.com/bJe28t1OEb4NegE70kafS01', '_blank')}
+            >
+              Ver Picks
             </Button>
-            <Button variant="premium" size="lg" className="text-lg px-8">
+            <Button 
+              variant="premium" 
+              size="lg" 
+              className="text-lg px-8"
+              onClick={() => window.open('https://buy.stripe.com/bJe28t1OEb4NegE70kafS01', '_blank')}
+            >
               Empezar Ahora
             </Button>
           </div>
@@ -215,9 +227,6 @@ const Index = () => {
                   <TrendingUp className="w-12 h-12 text-success" />
                 </div>
               </Card>
-              <Button variant="success" size="lg" className="w-full lg:w-auto">
-                Ver Historial Completo
-              </Button>
             </div>
             <div className="lg:order-1 relative">
               <div className="absolute inset-0 bg-gradient-success opacity-20 rounded-2xl blur-xl"></div>
@@ -255,7 +264,11 @@ const Index = () => {
                   <p className="text-muted-foreground text-sm">ROI Promedio</p>
                 </Card>
               </div>
-              <Button variant="hero" size="lg">
+              <Button 
+                variant="hero" 
+                size="lg"
+                onClick={() => window.open('https://buy.stripe.com/bJe28t1OEb4NegE70kafS01', '_blank')}
+              >
                 Únete Ahora
               </Button>
             </div>
